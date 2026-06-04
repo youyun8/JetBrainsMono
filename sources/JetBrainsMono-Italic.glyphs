@@ -1430,7 +1430,54 @@ ignore sub bracketright bracketright' numbersign;
 ignore sub bracketright' numbersign numbersign;
 sub SPC numbersign' by bracketright_numbersign.liga;
 sub bracketright' numbersign by SPC;
-} bracketright_numbersign.liga;";
+} bracketright_numbersign.liga;
+# --- ss19, cv08, cv12 enabled by default ---
+lookup ss19_default {
+sub exclam_equal.liga by exclam_equal.liga.ss19;
+sub exclam_equal_equal.liga by exclam_equal_equal.liga.ss19;
+sub equal_equal.liga by equal_equal.liga.ss19;
+sub equal_equal_equal.liga by equal_equal_equal.liga.ss19;
+} ss19_default;
+lookup cv08_default {
+sub K by K.cv08;
+sub Kcommaaccent by Kcommaaccent.cv08;
+sub k by k.cv08;
+sub kcommaaccent by kcommaaccent.cv08;
+sub kgreenlandic by kgreenlandic.cv08;
+sub Zhe-cy by Zhe-cy.cv08;
+sub Ka-cy by Ka-cy.cv08;
+sub Kje-cy by Kje-cy.cv08;
+sub Kadescender-cy by Kadescender-cy.cv08;
+sub zhe-cy by zhe-cy.cv08;
+sub ka-cy by ka-cy.cv08;
+sub kje-cy by kje-cy.cv08;
+sub kadescender-cy by kadescender-cy.cv08;
+sub Kappa by Kappa.cv08;
+sub KaiSymbol by KaiSymbol.cv08;
+sub kappa by kappa.cv08;
+} cv08_default;
+lookup cv12_default {
+sub u by u.cv12;
+sub uacute by uacute.cv12;
+sub ubreve by ubreve.cv12;
+sub ucircumflex by ucircumflex.cv12;
+sub udieresis by udieresis.cv12;
+sub udotbelow by udotbelow.cv12;
+sub ugrave by ugrave.cv12;
+sub uhookabove by uhookabove.cv12;
+sub uhorn by uhorn.cv12;
+sub uhornacute by uhornacute.cv12;
+sub uhorndotbelow by uhorndotbelow.cv12;
+sub uhorngrave by uhorngrave.cv12;
+sub uhornhookabove by uhornhookabove.cv12;
+sub uhorntilde by uhorntilde.cv12;
+sub uhungarumlaut by uhungarumlaut.cv12;
+sub umacron by umacron.cv12;
+sub uogonek by uogonek.cv12;
+sub uring by uring.cv12;
+sub utilde by utilde.cv12;
+} cv12_default;
+";
 tag = calt;
 },
 {
